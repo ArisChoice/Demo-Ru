@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/side_btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/home"
+            android:drawablePadding="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_15"
+            android:text="@string/str_Home"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_15" />
+
+        <include layout="@layout/divider_view" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/side_btn_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/profile"
+            android:drawablePadding="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_15"
+            android:text="@string/str_profile"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_15" />
+
+        <include layout="@layout/divider_view" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/side_btn_properties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/properties"
+            android:drawablePadding="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_15"
+            android:text="@string/str_myproperty"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_15" />
+
+        <include layout="@layout/divider_view" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/side_btn_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/settings"
+            android:drawablePadding="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_15"
+            android:text="@string/str_settings"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_15" />
+
+        <include layout="@layout/divider_view" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/side_btn_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/abouus"
+            android:drawablePadding="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_15"
+            android:text="@string/str_about"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_15" />
+
+        <include layout="@layout/divider_view" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/side_btn_faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/faq"
+            android:drawablePadding="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_15"
+            android:text="@string/str_faq"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_15" />
+
+        <include layout="@layout/divider_view" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/side_btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/logout2"
+            android:drawablePadding="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_15"
+            android:text="@string/str_logout"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_15" />
+
+        <include layout="@layout/divider_view" />
+
+    </LinearLayout>
+
+</LinearLayout>

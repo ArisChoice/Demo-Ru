@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.app.rum_a.utils.views.RumTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/margin_50"
+        android:text="Home fragment"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/txt_20"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lay_sampl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <include layout="@layout/dash_toolbar_layout" />
+
+        <include layout="@layout/main_view_home" />
+    </LinearLayout>
+</LinearLayout>

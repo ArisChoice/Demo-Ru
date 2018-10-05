@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextView">
+        <attr name="isBoldTextView" format="boolean" />
+
+    </declare-styleable>
+    <declare-styleable name="MyViewPager">
+        <attr name="swipeable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="EditText">
+        <attr name="isBoldEditText" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Button">
+        <attr name="isBoldButtonText" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckBox">
+        <attr name="isBoldCheckText" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeCardView">
+        <attr name="SwipeFlingStyle" format="reference"/>
+        <attr name="rotation_degrees" format="float"/>
+        <attr name="min_adapter_stack" format="integer"/>
+        <attr name="max_visible" format="integer"/>
+        <attr name="left_swipe_detect" format="boolean"/>
+        <attr name="right_swipe_detect" format="boolean"/>
+        <attr name="top_swipe_detect" format="boolean"/>
+        <attr name="bottom_swipe_detect" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="SwipePageView">
+        <attr name="SwipeFlingPageStyle" format="reference" />
+        <attr name="min_adapter_stack_page" format="integer" />
+        <!--<attr name="max_visible" format="integer"/>-->
+    </declare-styleable>
+
+    <declare-styleable name="RangeBar">
+        <attr name="tickCount" format="integer" />
+        <attr name="tickHeight" format="dimension" />
+        <attr name="barWeight" format="dimension" />
+        <attr name="barColorRange" format="reference|color" />
+        <attr name="connectingLineWeight" format="dimension" />
+        <attr name="connectingLineColor" format="reference|color" />
+        <attr name="thumbRadius" format="dimension" />
+        <attr name="thumbImageNormal" format="reference" />
+        <attr name="thumbImagePressed" format="reference" />
+        <attr name="thumbColorNormal" format="reference|color" />
+        <attr name="thumbColorPressed" format="reference|color" />
+    </declare-styleable>
+</resources>

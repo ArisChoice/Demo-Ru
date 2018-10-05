@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_light_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_230">
+
+                <com.app.rum_a.utils.views.RumTextView
+                    android:id="@+id/property_type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/margin_5"
+                    android:background="@color/red"
+                    android:minWidth="@dimen/margin_50"
+                    android:padding="@dimen/margin_5"
+                    android:text="@string/str_rent"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_15"
+                    android:visibility="gone" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/property_pager_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v4.view.ViewPager>
+
+                <com.rd.PageIndicatorView
+                    android:id="@+id/pageIndicatorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/margin_2"
+                    android:padding="@dimen/margin_1"
+                    app:piv_animationType="scale"
+                    app:piv_dynamicCount="true"
+                    app:piv_interactiveAnimation="true"
+                    app:piv_radius="@dimen/margin_4"
+                    app:piv_selectedColor="@color/color_light_green"
+                    app:piv_unselectedColor="@color/line_grey"
+                    app:piv_viewPager="@id/property_pager_images"
+                    attrs:piv_radius="4dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                app:cardCornerRadius="@dimen/margin_2"
+                app:cardElevation="@dimen/margin_2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:gravity="center_vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/owner_image"
+                            android:layout_width="54dp"
+                            android:layout_height="@dimen/margin_50"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/avtar"
+                            app:border_color="@color/color_light_green"
+                            app:border_width="@dimen/margin_1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/margin_5">
+
+                            <com.app.rum_a.utils.views.RumTextView
+                                android:id="@+id/owner_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Owner Name" />
+
+                            <com.app.rum_a.utils.views.RumTextView
+                                android:id="@+id/owner_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="Owner Address"
+                                android:textSize="@dimen/txt_13" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/margin_40"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imgchat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/chat"
+                                android:layout_centerVertical="true"
+                                android:tint="@color/colorAccent" />
+
+                            <ImageView
+                                android:id="@+id/notification_status_img"
+                                android:layout_width="@dimen/txt_10"
+                                android:layout_height="@dimen/txt_10"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="top"
+                                android:layout_marginBottom="@dimen/margin_20"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:src="@drawable/draw_rounded_corner_blue"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/chat_users_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <include layout="@layout/divider_view" />
+
+                        <include layout="@layout/recyclar_view_lay" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <com.app.rum_a.utils.views.RumTextView
+                    android:id="@+id/property_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/margin_5"
+                    android:text="Property Name"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/txt_16" />
+
+                <com.app.rum_a.utils.views.RumTextView
+                    android:id="@+id/property_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="@dimen/margin_5"
+                    android:text="$50000"
+                    android:textSize="@dimen/txt_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <com.app.rum_a.utils.views.RumTextView
+                    android:id="@+id/property_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:paddingRight="@dimen/margin_5"
+                    android:text="99 New Property"
+                    android:textColor="@color/color_black_" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginTop="@dimen/margin_5">
+
+                    <com.app.rum_a.utils.views.RumTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:paddingRight="@dimen/margin_5"
+                        android:singleLine="true"
+                        android:text="@string/str_property_type"
+                        android:textColor="@color/color_black_"
+                        android:textSize="@dimen/txt_16" />
+
+                    <com.app.rum_a.utils.views.RumTextView
+                        android:id="@+id/property_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:paddingRight="@dimen/margin_5"
+                        android:singleLine="true"
+                        android:text="House"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/txt_16" />
+                </LinearLayout>
+
+                <com.app.rum_a.utils.views.RumTextView
+                    android:id="@+id/property_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_5"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:paddingRight="@dimen/margin_5"
+                    android:paddingTop="@dimen/margin_5"
+                    android:text="New baltimore," />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

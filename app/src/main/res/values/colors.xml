@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4285F4</color>
+    <color name="colorPrimaryDark">#4285F4</color>
+    <color name="colorAccent">#4285F4</color>
+    <color name="colorAccent_transparent">#224285F4</color>
+    <color name="color_light_green">#4CCC92</color>
+    <color name="color_app_red">#F44242</color>
+    <color name="color_blue_effective">#2a2a2a</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black_">#000000</color>
+    <color name="color_background_light_grey">#E5EAF1</color>
+    <color name="color_trans_black">#88000000</color>
+    <color name="line_grey">#8f8f8f</color>
+
+</resources>

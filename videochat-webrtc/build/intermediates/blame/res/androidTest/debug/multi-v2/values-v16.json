@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/harish/Harish/demo-ru/Demo-Ru/videochat-webrtc/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/harish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.2.aar/f1663f51d6e70a755e0cab68c5ba1dc8/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/harish/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.2.aar/78c6570eedc538ff44f7c8a03b4e4898/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

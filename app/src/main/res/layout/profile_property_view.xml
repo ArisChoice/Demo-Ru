@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginRight="@dimen/margin_10"
+    android:orientation="vertical">
+
+    <com.app.rum_a.utils.views.RumTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_5"
+        android:text="@string/str_properties"
+        android:textAllCaps="true"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/txt_15" />
+
+    <include layout="@layout/recyclar_view_lay" />
+
+</LinearLayout>

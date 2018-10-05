@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_light_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--  Image  holder-->
+            <LinearLayout
+                android:id="@+id/layout_single_image_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_80"
+                    android:layout_height="@dimen/margin_80"
+                    android:layout_gravity="center"
+                    android:background="@drawable/draw_circle_white"
+                    android:foregroundTint="@color/color_app_red"
+                    android:padding="@dimen/txt_20"
+                    android:src="@android:drawable/ic_menu_camera" />
+
+                <com.app.rum_a.utils.views.RumTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_3"
+                    android:text="@string/str_upload_property_pic"
+                    android:textColor="@color/color_black" />
+            </LinearLayout>
+            <!--Multiple Image Holder-->
+            <LinearLayout
+                android:id="@+id/layout_multi_image_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/add_multi_image_btn"
+                    android:layout_width="@dimen/margin_80"
+                    android:layout_height="@dimen/margin_80"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_10"
+                    android:background="@drawable/draw_circle_white"
+                    android:foregroundTint="@color/color_app_red"
+                    android:padding="@dimen/margin_25"
+                    android:src="@drawable/pic_add2" />
+
+                <include layout="@layout/recyclar_view_lay" />
+
+            </LinearLayout>
+            <!--  Name location holder-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <com.app.rum_a.utils.views.RumEditText
+                    android:id="@+id/edTxt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    android:background="@drawable/draw_rounder_corner_white"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_name"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="@dimen/margin_10"
+                    android:singleLine="true"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/txt_15" />
+
+                <com.app.rum_a.utils.views.RumEditText
+                    android:id="@+id/edTxt_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    android:background="@drawable/draw_rounder_corner_white"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_location"
+                    android:maxLines="2"
+                    android:padding="@dimen/margin_10"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/txt_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    android:background="@drawable/draw_rounder_corner_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/currencySpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"></Spinner>
+
+                    <com.app.rum_a.utils.views.RumEditText
+                        android:id="@+id/edTxt_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_white"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:hint="@string/str_price"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLength="9"
+                        android:maxLines="2"
+                        android:padding="@dimen/margin_10"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/txt_15" />
+                </LinearLayout>
+                <!--Selling type-->
+                <LinearLayout
+                    android:id="@+id/layout_selling_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_15"
+                    android:orientation="horizontal">
+
+                    <com.app.rum_a.utils.views.RumCheckBox
+                        android:id="@+id/selling_type_sell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/selector_circle_checkbox"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:text="@string/str_sell" />
+
+                    <com.app.rum_a.utils.views.RumCheckBox
+                        android:id="@+id/selling_type_lease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_30"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_circle_checkbox"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:text="@string/str_lese" />
+
+                    <com.app.rum_a.utils.views.RumCheckBox
+                        android:id="@+id/selling_type_rent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_30"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_circle_checkbox"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:text="@string/str_rent"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <!--Property types-->
+                <include layout="@layout/divider_view" />
+
+                <LinearLayout
+                    android:id="@+id/layout_type_for_buyer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_15"
+                    android:orientation="horizontal">
+
+                    <com.app.rum_a.utils.views.RumCheckBox
+                        android:id="@+id/selling_type_rent_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/selector_circle_checkbox"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:text="@string/str_rent" />
+
+                    <com.app.rum_a.utils.views.RumCheckBox
+                        android:id="@+id/selling_type_buy_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_30"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_circle_checkbox"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:text="@string/str_buy" />
+
+                </LinearLayout>
+
+                <!--Property types-->
+                <include layout="@layout/divider_view" />
+
+                <LinearLayout
+                    android:id="@+id/layout_property_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_15"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.app.rum_a.utils.views.RumCheckBox
+                            android:id="@+id/property_type_house"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/selector_circle_checkbox"
+                            android:drawablePadding="@dimen/margin_10"
+                            android:text="@string/str_house" />
+
+                        <com.app.rum_a.utils.views.RumCheckBox
+                            android:id="@+id/property_type_apartment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_30"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/selector_circle_checkbox"
+                            android:drawablePadding="@dimen/margin_10"
+                            android:text="@string/str_apartment" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10">
+
+                        <com.app.rum_a.utils.views.RumCheckBox
+                            android:id="@+id/property_type_commercial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/selector_circle_checkbox"
+                            android:drawablePadding="@dimen/margin_10"
+                            android:text="@string/str_commercial" />
+
+                        <com.app.rum_a.utils.views.RumCheckBox
+                            android:id="@+id/property_type_land"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_30"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/selector_circle_checkbox"
+                            android:drawablePadding="@dimen/margin_10"
+                            android:text="@string/str_Land" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.app.rum_a.utils.views.RumEditText
+                    android:id="@+id/edTxt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_100"
+                    android:layout_margin="@dimen/margin_10"
+                    android:background="@color/color_white"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:gravity="top"
+                    android:hint="@string/str_desc"
+                    android:maxLength="1000"
+                    android:padding="@dimen/margin_10"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/txt_16" />
+
+                <com.app.rum_a.utils.views.RumTextView
+                    android:id="@+id/txt_btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_15"
+                    android:background="@drawable/draw_rounded_corner_blue"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_15"
+                    android:text="@string/str_submit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/txt_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

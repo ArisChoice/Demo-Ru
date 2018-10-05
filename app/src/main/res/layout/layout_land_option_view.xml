@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_20"
+        android:orientation="vertical">
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:padding="@dimen/margin_5"
+            android:text="@string/str_looking_for"
+            android:textSize="@dimen/txt_16" />
+
+        <Spinner
+            android:id="@+id/spinner_looking"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:background="@drawable/draw_rounder_corner_white"
+            android:drawableRight="@drawable/arrow_down"
+            android:gravity="center_vertical"
+            android:hint="@string/str_rent"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/margin_5"
+            android:textSize="@dimen/txt_18" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_10"
+            android:padding="@dimen/margin_5"
+            android:text="@string/str_seeking_for"
+            android:textSize="@dimen/txt_16" />
+
+        <Spinner
+            android:id="@+id/spinner_Seeking"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:background="@drawable/draw_rounder_corner_white"
+            android:drawableRight="@drawable/arrow_down"
+            android:gravity="center_vertical"
+            android:hint="@string/str_rent"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/margin_5"
+            android:textSize="@dimen/txt_18" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/txt_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_30"
+            android:background="@drawable/draw_rounded_corner_blue"
+            android:gravity="center"
+            android:padding="@dimen/margin_15"
+            android:text="@string/str_next"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_16"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background_light_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:minWidth="@dimen/margin_200"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10">
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/dialog_title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/margin_5"
+            android:text="Title"
+            android:textSize="@dimen/txt_14"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/colorAccent" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/dialog_message_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:gravity="center"
+            android:text="Message"
+            android:textSize="@dimen/txt_14" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/dialog_ok_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_50"
+            android:paddingRight="@dimen/margin_50"
+            android:paddingTop="@dimen/margin_5"
+            android:text="@string/str_ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_15" />
+    </LinearLayout>
+
+</LinearLayout>

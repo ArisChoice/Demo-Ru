@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginRight="@dimen/margin_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.app.rum_a.utils.views.RumTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/margin_5"
+                android:singleLine="true"
+                android:text="@string/str_proerty_liked"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt_15" />
+
+            <com.app.rum_a.utils.views.RumTextView
+                android:id="@+id/user_liked_properties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selecto_default_click"
+                android:gravity="center"
+                android:text="44"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/txt_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.app.rum_a.utils.views.RumTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/margin_5"
+                android:singleLine="true"
+                android:text="@string/str_proerty_fav"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt_15" />
+
+            <com.app.rum_a.utils.views.RumTextView
+                android:id="@+id/user_fav_properties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selecto_default_click"
+                android:gravity="center"
+                android:text="32"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/txt_15" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

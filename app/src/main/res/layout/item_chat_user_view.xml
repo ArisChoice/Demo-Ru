@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:layout_margin="@dimen/margin_5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_user_image"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            android:layout_gravity="center"
+            android:padding="@dimen/margin_5"
+
+            android:src="@drawable/avtar"
+            app:border_color="@color/colorAccent"
+            app:border_width="@dimen/margin_2" />
+
+        <ImageView
+            android:id="@+id/notification_status_img"
+            android:layout_width="@dimen/txt_12"
+            android:layout_height="@dimen/txt_12"
+            android:layout_alignRight="@+id/chat_user_image"
+            android:src="@drawable/draw_rounded_corner_blue"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.app.rum_a.utils.views.RumTextView
+        android:id="@+id/chat_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="2"
+        android:maxWidth="@dimen/margin_100"
+        android:padding="@dimen/margin_2"
+        android:text="@string/hint_user_name"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/txt_10" />
+
+</LinearLayout>

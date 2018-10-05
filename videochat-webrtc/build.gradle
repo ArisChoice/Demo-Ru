@@ -1,0 +1,49 @@
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+//        applicationId "com.kuku_android"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+//    productFlavors {
+//        speedDev {
+//            minSdkVersion 21
+//        }
+//        dev {
+//            minSdkVersion rootProject.minSdkVersion
+//        }
+//    }
+
+
+//    buildTypes {
+//        debug {
+//            resValue  "string", "versionName", "QuickBlox WebRTC\nBuild version " +  defaultConfig.getVersionName()
+//            signingConfig signingConfigs.debug
+//        }
+//
+//        release {
+//            resValue  "string", "versionName", "QuickBlox WebRTC\nBuild version " +  defaultConfig.getVersionName()
+//            signingConfig signingConfigs.debug
+//        }
+//    }
+
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile "com.quickblox:quickblox-android-sdk-videochat-webrtc:$rootProject.quickBlox"
+    compile 'com.android.support:appcompat-v7:26.0.+'
+
+}

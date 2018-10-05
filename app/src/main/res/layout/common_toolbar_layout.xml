@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/back_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_10"
+            android:src="@drawable/back_arrow" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/txt_title_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/back_toolbar"
+            android:layout_toLeftOf="@+id/imageView3"
+            android:layout_toRightOf="@+id/back_toolbar"
+            android:layout_toStartOf="@+id/imageView3"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="@dimen/margin_5"
+            android:text="@string/str_title"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_18" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:padding="@dimen/margin_10"
+            android:src="@drawable/back_arrow"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

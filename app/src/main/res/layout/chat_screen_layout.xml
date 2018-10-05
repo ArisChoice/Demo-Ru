@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_light_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/chat_toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <include layout="@layout/recyclar_view_lay" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_view_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <com.app.rum_a.utils.views.RumEditText
+                android:id="@+id/messageField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:hint="@string/str_type_message"
+                android:maxLines="3"
+                android:padding="@dimen/margin_10"
+                android:textSize="@dimen/txt_15" />
+
+            <ImageView
+                android:id="@+id/send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:src="@drawable/send" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

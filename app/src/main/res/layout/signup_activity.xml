@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_light_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <com.app.rum_a.utils.views.RumEditText
+            android:id="@+id/edTxt_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/draw_rounder_corner_white"
+            android:drawableLeft="@drawable/name"
+            android:drawablePadding="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:hint="@string/str_first_name"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/margin_10"
+            android:singleLine="true"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_16" />
+
+        <com.app.rum_a.utils.views.RumEditText
+            android:id="@+id/edTxt_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/draw_rounder_corner_white"
+            android:drawableLeft="@drawable/name"
+            android:drawablePadding="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:hint="@string/str_last_name"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/margin_10"
+            android:singleLine="true"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_16" />
+
+        <com.app.rum_a.utils.views.RumEditText
+            android:id="@+id/edTxt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/draw_rounder_corner_white"
+            android:drawableLeft="@drawable/name"
+            android:drawablePadding="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:hint="@string/str_user_name"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/margin_10"
+            android:singleLine="true"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_16" />
+
+        <com.app.rum_a.utils.views.RumEditText
+            android:id="@+id/edTxt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/draw_rounder_corner_white"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:hint="@string/str_email_address"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/margin_10"
+            android:singleLine="true"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_16" />
+
+        <com.app.rum_a.utils.views.RumEditText
+            android:id="@+id/edTxt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/draw_rounder_corner_white"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:hint="@string/str_passwrd"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/margin_10"
+            android:singleLine="true"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_16" />
+
+        <com.app.rum_a.utils.views.RumEditText
+            android:id="@+id/edTxt_re_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/draw_rounder_corner_white"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:hint="@string/str_re_passwrd"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/margin_10"
+            android:singleLine="true"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/terms_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.app.rum_a.utils.views.RumTextView
+                android:id="@+id/termsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_agree_term_conditions" />
+
+        </LinearLayout>
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/txt_btn_complte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/draw_rounded_corner_blue"
+            android:gravity="center"
+            android:padding="@dimen/margin_15"
+            android:text="@string/str_complete"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

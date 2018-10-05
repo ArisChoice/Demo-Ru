@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+//    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.app.rum_a"
+        minSdkVersion 19
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName '1.0.0'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            keyAlias 'ruma2018'
+            keyPassword 'ruma2018'
+            storeFile file('../ruma_key_release.jks')
+            storePassword 'ruma2018'
+        }
+    }
+    defaultConfig {
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('src/main/libs/universal-image-loader-1.9.4.jar')
+    compile project(':videochat-webrtc')
+
+    //noinspection GradleCompatible
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+
+    //    testImplementation 'junit:junit:4.12'
+
+    //    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+
+    //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+    // swipe view
+    implementation "com.mindorks:placeholderview:$rootProject.placeholderviewVersion"
+    implementation "com.google.dagger:dagger:$rootProject.dagger2Version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.dagger2Version"
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retroVersin"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retroVersin"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.retroLoginterceptor"
+    implementation "com.jakewharton:butterknife:$rootProject.butterKnife"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnife"
+    implementation 'de.hdodenhof:circleimageview:1.3.0'
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation 'com.facebook.rebound:rebound:0.3.4'
+    implementation "com.google.firebase:firebase-crash:$rootProject.googleService"
+    implementation "com.google.firebase:firebase-messaging:$rootProject.googleService"
+    implementation "com.google.firebase:firebase-core:$rootProject.googleService"
+    implementation "com.google.firebase:firebase-crash:$rootProject.googleService"
+    implementation "com.google.android.gms:play-services-gcm:$rootProject.googleService"
+    implementation "com.google.android.gms:play-services-auth:$rootProject.googleService"
+    implementation "com.google.android.gms:play-services-places:$rootProject.googleService"
+    implementation "com.google.android.gms:play-services-location:$rootProject.googleService"
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.4.7'
+
+    //    implementation 'org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.2'
+
+    //    implementation 'com.android.support:multidex:1.0.1'
+    implementation "com.quickblox:quickblox-android-sdk-chat:$rootProject.quickBlox"
+    implementation "com.quickblox:quickblox-android-sdk-content:$rootProject.quickBlox"
+    implementation "com.quickblox:quickblox-android-sdk-messages:$rootProject.quickBlox"
+    implementation "com.quickblox:quickblox-android-sdk-location:$rootProject.quickBlox"
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+}
+apply plugin: 'com.google.gms.google-services'

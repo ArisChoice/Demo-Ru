@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/productLL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_2"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_small"
+    android:paddingRight="@dimen/margin_small"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_very_small"
+        android:layout_toLeftOf="@+id/dateTV"
+        android:layout_toRightOf="@+id/productIV"
+        android:orientation="vertical">
+
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/nameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingTop="@dimen/margin_very_small"
+            android:text="@string/hint_user_name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_12" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/lastMsgTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingBottom="@dimen/margin_very_small"
+            android:singleLine="true"
+            android:text="@string/hint_user_name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/txt_12" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/productIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+
+
+        <include
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userimage"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avtar" />
+
+        <ImageView
+            android:id="@+id/onlineImgae"
+            android:layout_width="@dimen/margin_15"
+            android:layout_height="@dimen/margin_15"
+            android:layout_alignRight="@+id/userimage"
+            android:layout_marginRight="-3dp"
+            android:src="@drawable/radio_selected" />
+
+        <ImageView
+            android:id="@+id/imgTypeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/userimage"
+            android:layout_alignRight="@+id/userimage"
+            android:src="@drawable/logo_inner"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+    <com.app.rum_a.utils.views.RumTextView
+        android:id="@+id/unreadmessagecount"
+        android:layout_width="@dimen/margin_20"
+        android:layout_height="@dimen/margin_20"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/dateTV"
+        android:background="@drawable/back_grey"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_12" />
+
+    <com.app.rum_a.utils.views.RumTextView
+        android:id="@+id/dateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/margin_very_small"
+        android:text=""
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/txt_10" />
+
+
+</RelativeLayout>
+

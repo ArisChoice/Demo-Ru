@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/selecto_default_click"
+                app:cardElevation="@dimen/margin_2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.app.rum_a.utils.views.RumEditText
+                        android:id="@+id/search_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/color_white"
+                        android:drawableLeft="@drawable/search"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:drawableRight="@drawable/map"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/str_select_location"
+                        android:maxLines="2"
+                        android:padding="@dimen/margin_10"
+                        android:textSize="@dimen/txt_11" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <include layout="@layout/setting_view_one" />
+            </LinearLayout>
+
+            <com.app.rum_a.utils.views.RumTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/colorAccent"
+                android:padding="@dimen/margin_10"
+                android:text="@string/str_looking_"
+                android:textColor="@color/color_white" />
+
+            <include layout="@layout/setting_looking_types" />
+
+
+            <com.app.rum_a.utils.views.RumTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/colorAccent"
+                android:padding="@dimen/margin_10"
+                android:text="@string/str_seeking"
+                android:textColor="@color/color_white" />
+
+            <include layout="@layout/setting_seeking_types" />
+
+            <include layout="@layout/divider_view_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/setting_view_two" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

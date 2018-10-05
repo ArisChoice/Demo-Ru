@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:text="@string/str_sell"
+            android:textColor="@color/color_black"
+            android:visibility="gone" />
+
+        <include layout="@layout/divider_view" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:text="@string/str_lese"
+            android:textColor="@color/color_black"
+            android:visibility="gone" />
+
+        <include layout="@layout/divider_view" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/seekingType_house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:text="@string/str_house"
+            android:textColor="@color/color_black" />
+
+        <include layout="@layout/divider_view" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/seekingType_appartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:text="@string/str_apartment"
+            android:textColor="@color/color_black" />
+
+        <include layout="@layout/divider_view" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/seekingType_commercial_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:text="@string/str_commercial"
+            android:textColor="@color/color_black" />
+
+        <include layout="@layout/divider_view" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/seekingType_land"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:text="@string/str_Land"
+            android:textColor="@color/color_black" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/harish/Harish/demo-ru/Demo-Ru/videochat-webrtc/src/main/assets"><file name="qb_config.json" path="/home/harish/Harish/demo-ru/Demo-Ru/videochat-webrtc/src/main/assets/qb_config.json"/></source><source path="/home/harish/Harish/demo-ru/Demo-Ru/videochat-webrtc/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/home/harish/Harish/demo-ru/Demo-Ru/videochat-webrtc/src/debug/assets"/></dataSet></merger>

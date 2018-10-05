@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_1">
+
+    <ImageView
+        android:id="@+id/imgpropertyImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_light_green"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img2" />
+
+    <com.app.rum_a.utils.views.RumTextView
+        android:id="@+id/txtLike"
+        android:layout_width="@dimen/margin_100"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="200dp"
+        android:alpha="0.0"
+        android:background="@drawable/draw_rounded_app_border_color"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:rotation="-45"
+        android:text="@string/like_"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/txt_25"
+        android:textStyle="bold"
+        app:isBoldTextView="false" />
+
+    <com.app.rum_a.utils.views.RumTextView
+        android:id="@+id/txtNope"
+        android:layout_width="@dimen/margin_100"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="200dp"
+        android:alpha="0.0"
+        android:background="@drawable/draw_rounded_red_border_color"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:rotation="45"
+        android:text="@string/nope_"
+        android:textColor="@color/color_app_red"
+        android:textSize="@dimen/txt_25"
+        android:textStyle="bold"
+        app:isBoldTextView="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_120"
+        android:background="@color/color_trans_black"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_5">
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/txtPropertyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:drawablePadding="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:text="Hillcrest $ 200,000 "
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_18"
+            app:isBoldTextView="true" />
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/txtDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtUserName"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="2 miles away"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_15"
+            app:isBoldTextView="false" />
+
+    </LinearLayout>
+
+    <com.app.rum_a.utils.views.RumTextView
+        android:id="@+id/propertyTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtLike"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@color/red"
+        android:gravity="center"
+        android:minWidth="@dimen/margin_80"
+        android:padding="@dimen/margin_5"
+        android:text="Rent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_15"
+        android:visibility="gone" />
+</RelativeLayout>

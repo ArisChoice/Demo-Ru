@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="@string/str_private_account"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_15" />
+
+        <com.app.rum_a.utils.views.RumCheckBox
+            android:id="@+id/toggleAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/toggle_back"
+            android:padding="@dimen/margin_5" />
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/divider_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50">
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="@string/str_push_notofocations"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_15" />
+
+        <com.app.rum_a.utils.views.RumCheckBox
+            android:id="@+id/togglePushNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/toggle_back"
+            android:padding="@dimen/margin_5" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/divider_view" />
+
+    <RelativeLayout
+        android:id="@+id/relFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:background="@drawable/selecto_default_click">
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="@string/str_feedback"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/txt_15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:src="@drawable/arrow_right" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/divider_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@drawable/selecto_default_click">
+
+        <com.app.rum_a.utils.views.RumTextView
+            android:id="@+id/txtDeleteAccount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="@dimen/margin_5"
+            android:text="@string/str_delete_account"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_15" />
+    </RelativeLayout>
+    <!--  <RelativeLayout
+          android:id="@+id/relLogout"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/margin_50"
+          android:visibility="gone"
+          android:background="@drawable/selecto_default_click">
+
+          <com.app.rum_a.utils.views.RumTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="@dimen/margin_10"
+              android:text="@string/str_logout"
+              android:textColor="@color/color_black"
+              android:textSize="@dimen/txt_15" />
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="@dimen/margin_10"
+              android:src="@drawable/logout" />
+
+      </RelativeLayout>-->
+</LinearLayout>

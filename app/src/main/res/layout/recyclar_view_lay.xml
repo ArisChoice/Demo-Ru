@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclar_View_lst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"></android.support.v7.widget.RecyclerView>
+
+    <com.app.rum_a.utils.views.RumTextView
+        android:id="@+id/txt_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:drawableBottom="@drawable/logo_home"
+        android:drawablePadding="@dimen/margin_10"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:text="@string/str_empty_message"
+        android:textSize="@dimen/txt_18"
+        android:visibility="gone" />
+
+</LinearLayout>
